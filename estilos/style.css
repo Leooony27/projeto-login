@@ -3,10 +3,60 @@
 /* Paleta de Cores
 
 Verde mais escuro do mundo: #000C0C (Mais escuro)
-Verde menos escuro do mundo: #12623
+Verde menos escuro do mundo: #012623
 Verde médio: #002121
 Verde quase azul: #455955 (Menos escuro)
 Cinza: #8C8A80
 
-
 */
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color:#455955 ;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.596);
+
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #455955 url(../imagens/pexels-technobulka-2908971.jpg) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+
+}
+
